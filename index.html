@@ -12,14 +12,14 @@
     <title>Checkout form</title>
 </head>
 <body>
-    <div class="container-fluid bg-light">
+    <div class="container-fluid bg-light mb-5">
 
         <!--Header-->
         <div class="row mt-4 mx-5">
             <div class="col-12 d-flex flex-column align-items-center">
                 <i class="fa-brands fa-bootstrap fs-1"></i>
                 <h1>Checkout form</h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere sint dolor ut voluptates ad, minus, atque hic amet debitis repudiandae impedit ipsam! Culpa, rerum nostrum mollitia modi placeat deleniti atque?</p>
+                <p>Below is an example form built entirely with Bootstrap's form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it. The following content must be fully completed in order to get a positive response from the cart form to proceed on.</p>
             </div>
         </div>
 
@@ -37,7 +37,7 @@
                         <label for="name"><strong>First name</strong></label>
                         <input type="text" class="w-100">
                     </div>
-                    <div class="d-flex flex-column col-5" id="last name">
+                    <div class="d-flex flex-column col-5 ms-3" id="last name">
                         <label for="name"><strong>Last name</strong></label>
                         <input type="text" class="w-100">
                     </div>
@@ -55,7 +55,10 @@
                 <div class="d-flex flex-column mt-2">
                     <div class="d-flex flex-column col-11">
                         <label for="email"><strong>Email</strong>(Optional)</label>
-                        <input type="email" placeholder="you@example.com">
+                        <div class="d-flex flex-row">
+                            <button class="btn btn-light">@</button>
+                            <input type="email" placeholder="you@example.com" class="col-11 ms-3">
+                        </div>
                     </div>
                 </div>
                 
@@ -86,7 +89,7 @@
                             <option value="3">3</option>
                         </select>
                     </div>
-                    <div class="d-flex flex-column col-3 me-5">
+                    <div class="d-flex flex-column col-3 me-5 ms-3">
                         <label for="state"><strong>State</strong></label>
                         <select name="state" id="state">
                             <option value="choose" class="text-secondary">Choose...</option>
@@ -95,7 +98,7 @@
                             <option value="3">3</option>
                         </select>
                     </div>
-                    <div class="d-flex flex-column col-3 me-5">
+                    <div class="d-flex flex-column col-3 me-5 ms-3">
                         <label for="state"><strong>Zip</strong></label>
                         <input type="text">
                     </div>
@@ -108,14 +111,14 @@
             <!--Cart-->
             <div class="col-4 d-flex flex-column">
 
-                <div class="text-secondary col-10 d-flex flex-row justify-content-between mb-3">
+                <div class="text-secondary col-11 d-flex flex-row justify-content-between mb-3">
                     <h3>Your cart</h3>
-                    <button class=" btn bg-secondary rounded-pill text-white">3</button>
+                    <button class="btn bg-secondary rounded-pill text-white me-2">3</button>
                 </div>
 
                 <div id="firstProduct" class="d-flex flex-row justify-content-between border">
                     <div>
-                        <h5>Product name</h5>
+                        <h6>Product name</h6>
                         <p class="text-muted">Brief description</p>
                     </div>
                     <div>
@@ -125,7 +128,7 @@
 
                 <div id="secondProduct" class="d-flex flex-row justify-content-between border bg-light">
                     <div>
-                        <h5>Second product</h5>
+                        <h6>Second product</h6>
                         <p class="text-muted">Brief description</p>
                     </div>
                     <div>
@@ -135,7 +138,7 @@
 
                 <div id="thirdProduct" class="d-flex flex-row justify-content-between border">
                     <div>
-                        <h5>Third item</h5>
+                        <h6>Third item</h6>
                         <p class="text-muted">Brief description</p>
                     </div>
                     <div>
@@ -145,8 +148,8 @@
 
                 <div id="promoCode" class="d-flex flex-row justify-content-between border bg-light">
                     <div>
-                        <h5 class="text-success">Promo code</h5>
-                        <p class="text-muted text-success">Example code</p>
+                        <h6 class="text-warning">Promo code</h6>
+                        <p class="text-warning">Example code</p>
                     </div> 
                     <div>
                         <p class="text-muted me-5">-$5</p>
@@ -155,7 +158,7 @@
 
                 <div id="Total" class="d-flex flex-row justify-content-between border">
                     <div>
-                        <h5>Total (USD)</h5>
+                        <h6>Total (USD)</h6>
                     </div> 
                     <div>
                         <strong><p class="me-5">$20</p></strong>
